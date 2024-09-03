@@ -17,16 +17,11 @@ CREATE TABLE Usuarios (
 alter table Usuarios
 	add Tipo_User char default '1';
 
-	select * from Usuarios
+alter table Usuarios
+	add FECHA_DE_CREACION DATE default GETDATE();
 
-select * from Empleados;
-select * from puestos;
-
-
-
-	
-
-
+alter table Usuarios
+	add FECHA_DE_LA_ULTIMA_ACTUALLIZACION DATE default GETDATE();
 
 create table clientes (
 	id_cliente int identity primary key not null,  
