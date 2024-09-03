@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-pink-200">
+    <main class="flex flex-row h-screen justify-center rounded-lg m-4">
+      <div
+        class="w-1/3 h-[95vh] flex gap-4 flex-col justify-center items-center bg-gradient-to-t from-blue-600 to-blue-300 relative rounded-l-3xl shadow-lg shadow-blue-600"
+      >
+        <section class="absolute top-0 left-0 m-4">
+          <img
+            src="/Public/Imagenes/entrarlogo.png"
+            alt=""
+            class="rounded-full shadow-lg shadow-blue-700"
+          />
+        </section>
+        <section>
+          <h2 class="text-center text-white p-4">
+            Bienvenido A La Mejor Aplicacion De Notas que podrias usar!!!!
+          </h2>
+        </section>
+        <section class="flex justify-center">
+          <img
+            src="/Public/Imagenes/logingLogo.png"
+            alt=""
+            class="rounded-full w-[75%] shadow-lg shadow-blue-700"
+          />
+        </section>
+        <section class="absolute bottom-16">
+          <h2 class="font-bold text-7xl text-blue-950">........</h2>
+        </section>
+      </div>
+
+      <div
+        class="w-1/2 h-[95vh] bg-gradient-to-t from-blue-500 to-gray-600 rounded-r-3xl flex flex-col justify-center shadow-lg shadow-blue-600"
+      >
+        <section
+          class="h-screen flex flex-col justify-center items-center relative gap-10"
+        >
+          <section class="text-white absolute top-5 right-10 flex gap-1">
+            <button
+              class="bg-gray-400 rounded-l-lg p-4 -translate-y-1 shadow-md shadow-gray-900 transition duration-75"
+              id="logingbtn"
+            >
+              Inicio secesion
+            </button>
+            <button
+              class="bg-gray-400 rounded-r-lg p-4 hover:-translate-y-1 hover:shadow-md hover:shadow-gray-900 transition duration-75"
+              id="createbtn"
+            >
+              Crear cuenta
+            </button>
+          </section>
+          <section class="flex flex-row gap-4 items-start justify-center">
+            <p>Inicio de secion</p>
+            <p>Creacion de usuario</p>
+          </section>
+
+          <form
+            id="creacionDeUsuario"
+            action=""
+            class="flex flex-col justify-center items-start gap-10 p-4"
+          >
+            <input
+              type="text"
+              id=""
+              placeholder="Correo Del Usuario"
+              class="border-b-2 bg-transparent border-white text-left text-white w-full placeholder:text-white"
+            />
+            <input
+              type="password"
+              name=""
+              id=""
+              placeholder="Contraseña Del Usuario"
+              class="border-b-2 bg-transparent border-white text-left text-white w-full placeholder:text-white"
+            />
+            <section class="flex gap-2">
+              <input type="checkbox" name="" id="" placeholder="" />
+              <p class="text-white">Quieres mantener tu secion iniciada?</p>
+
+              <a href="#" class="font-bold text-pink-200"
+                >No tienes una cuenta? cliqueame!!!</a
+              >
+            </section>
+            <button
+              class="font-bold text-xl text-white border-2 rounded-lg p-4 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 transition hover:-translate-y-1 shadow-blue-800 shadow-md hover:shadow-lg hover:shadow-blue-800"
+            >
+              Iniciar sesión
+            </button>
+          </form>
+
+          <section></section>
+        </section>
+      </div>
+    </main>
+
+    <script src="./Scrips/loging-app.js"></script>
+  </body>
+</html>

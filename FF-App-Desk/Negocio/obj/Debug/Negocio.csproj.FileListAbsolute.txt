@@ -1,0 +1,15 @@
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\Negocio.dll
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\DB.dll
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\DB.pdb
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\DB.dll.config
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\EntityFramework.xml
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\obj\Debug\Negocio.dll
+C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\Negocio\obj\Debug\Negocio.pdb

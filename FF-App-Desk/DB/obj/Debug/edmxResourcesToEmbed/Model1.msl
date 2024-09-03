@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FixFastDbModelStoreContainer" CdmEntityContainer="FixFastDbEntities">
+    <EntitySetMapping Name="Almacen_De_Reparaciones">
+      <EntityTypeMapping TypeName="FixFastDbModel.Almacen_De_Reparaciones">
+        <MappingFragment StoreEntitySet="Almacen_De_Reparaciones">
+          <ScalarProperty Name="id_pieza_a_reparar" ColumnName="id_pieza_a_reparar" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_empleado_a_cargo" ColumnName="id_empleado_a_cargo" />
+          <ScalarProperty Name="id_estado_de_la_pieza" ColumnName="id_estado_de_la_pieza" />
+          <ScalarProperty Name="descripcion_de_la_averia" ColumnName="descripcion_de_la_averia" />
+          <ScalarProperty Name="monto_acordado" ColumnName="monto_acordado" />
+          <ScalarProperty Name="fecha_de_la_alamacenamiento" ColumnName="fecha_de_la_alamacenamiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categorias">
+      <EntityTypeMapping TypeName="FixFastDbModel.categorias">
+        <MappingFragment StoreEntitySet="categorias">
+          <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
+          <ScalarProperty Name="name_categoria" ColumnName="name_categoria" />
+          <ScalarProperty Name="descripcion_categoria" ColumnName="descripcion_categoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="citas">
+      <EntityTypeMapping TypeName="FixFastDbModel.citas">
+        <MappingFragment StoreEntitySet="citas">
+          <ScalarProperty Name="id_cita" ColumnName="id_cita" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_empleado" ColumnName="id_empleado" />
+          <ScalarProperty Name="descripcion_de_la_averia" ColumnName="descripcion_de_la_averia" />
+          <ScalarProperty Name="monto_acordado" ColumnName="monto_acordado" />
+          <ScalarProperty Name="fecha_de_la_cita" ColumnName="fecha_de_la_cita" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="FixFastDbModel.clientes">
+        <MappingFragment StoreEntitySet="clientes">
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+          <ScalarProperty Name="rango" ColumnName="rango" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleados">
+      <EntityTypeMapping TypeName="FixFastDbModel.Empleados">
+        <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="id_empleados" ColumnName="id_empleados" />
+          <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+          <ScalarProperty Name="id_puesto" ColumnName="id_puesto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estados_de_las_Piezas">
+      <EntityTypeMapping TypeName="FixFastDbModel.estados_de_las_Piezas">
+        <MappingFragment StoreEntitySet="estados_de_las_Piezas">
+          <ScalarProperty Name="id_estado" ColumnName="id_estado" />
+          <ScalarProperty Name="name_estado" ColumnName="name_estado" />
+          <ScalarProperty Name="desripcion_estado" ColumnName="desripcion_estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productos">
+      <EntityTypeMapping TypeName="FixFastDbModel.Productos">
+        <MappingFragment StoreEntitySet="Productos">
+          <ScalarProperty Name="id_productos" ColumnName="id_productos" />
+          <ScalarProperty Name="id_categria" ColumnName="id_categria" />
+          <ScalarProperty Name="name_producto" ColumnName="name_producto" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="marca_del_producto" ColumnName="marca_del_producto" />
+          <ScalarProperty Name="precio_unidad" ColumnName="precio_unidad" />
+          <ScalarProperty Name="cantidad_en_stock" ColumnName="cantidad_en_stock" />
+          <ScalarProperty Name="precio_De_Abastesimiento" ColumnName="precio_De_Abastesimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="puestos">
+      <EntityTypeMapping TypeName="FixFastDbModel.puestos">
+        <MappingFragment StoreEntitySet="puestos">
+          <ScalarProperty Name="id_Puestos" ColumnName="id_Puestos" />
+          <ScalarProperty Name="name_Puesto" ColumnName="name_Puesto" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="pago_por_hora" ColumnName="pago_por_hora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="FixFastDbModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="FixFastDbModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="last_name1" ColumnName="last_name1" />
+          <ScalarProperty Name="last_name2" ColumnName="last_name2" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Tipo_User" ColumnName="Tipo_User" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="FixFastDbModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="FixFastDbModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="FixFastDbModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="FixFastDbModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FixFastDbModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="FixFastDbModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FixFastDbModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="FixFastDbModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="FixFastDbModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

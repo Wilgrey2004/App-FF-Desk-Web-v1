@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FixFastDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Almacen_De_Reparaciones">
+    <Key>
+      <PropertyRef Name="id_pieza_a_reparar" />
+    </Key>
+    <Property Name="id_pieza_a_reparar" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_cliente" Type="int" />
+    <Property Name="id_empleado_a_cargo" Type="int" />
+    <Property Name="id_estado_de_la_pieza" Type="int" />
+    <Property Name="descripcion_de_la_averia" Type="varchar(max)" />
+    <Property Name="monto_acordado" Type="float" />
+    <Property Name="fecha_de_la_alamacenamiento" Type="datetime" />
+  </EntityType>
+  <EntityType Name="categorias">
+    <Key>
+      <PropertyRef Name="id_categoria" />
+    </Key>
+    <Property Name="id_categoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name_categoria" Type="varchar" MaxLength="20" />
+    <Property Name="descripcion_categoria" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="citas">
+    <Key>
+      <PropertyRef Name="id_cita" />
+    </Key>
+    <Property Name="id_cita" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_cliente" Type="int" />
+    <Property Name="id_empleado" Type="int" />
+    <Property Name="descripcion_de_la_averia" Type="varchar(max)" />
+    <Property Name="monto_acordado" Type="float" />
+    <Property Name="fecha_de_la_cita" Type="datetime" />
+  </EntityType>
+  <EntityType Name="clientes">
+    <Key>
+      <PropertyRef Name="id_cliente" />
+    </Key>
+    <Property Name="id_cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Usuario" Type="int" />
+    <Property Name="rango" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="id_empleados" />
+    </Key>
+    <Property Name="id_empleados" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Usuario" Type="int" />
+    <Property Name="id_puesto" Type="int" />
+  </EntityType>
+  <EntityType Name="estados_de_las_Piezas">
+    <Key>
+      <PropertyRef Name="id_estado" />
+    </Key>
+    <Property Name="id_estado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name_estado" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="desripcion_estado" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="id_productos" />
+    </Key>
+    <Property Name="id_productos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_categria" Type="int" />
+    <Property Name="name_producto" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="descripcion" Type="varchar(max)" Nullable="false" />
+    <Property Name="marca_del_producto" Type="varchar" MaxLength="30" />
+    <Property Name="precio_unidad" Type="float" Nullable="false" />
+    <Property Name="cantidad_en_stock" Type="int" Nullable="false" />
+    <Property Name="precio_De_Abastesimiento" Type="float" />
+  </EntityType>
+  <EntityType Name="puestos">
+    <Key>
+      <PropertyRef Name="id_Puestos" />
+    </Key>
+    <Property Name="id_Puestos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name_Puesto" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="descripcion" Type="varchar(max)" />
+    <Property Name="pago_por_hora" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="last_name1" Type="varchar" MaxLength="30" />
+    <Property Name="last_name2" Type="varchar" MaxLength="30" />
+    <Property Name="sexo" Type="char" MaxLength="1" />
+    <Property Name="password" Type="varchar(max)" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Tipo_User" Type="char" MaxLength="1" />
+  </EntityType>
+  <Association Name="FK__Almacen_D__id_cl__66603565">
+    <End Role="clientes" Type="Self.clientes" Multiplicity="0..1" />
+    <End Role="Almacen_De_Reparaciones" Type="Self.Almacen_De_Reparaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clientes">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="Almacen_De_Reparaciones">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Almacen_D__id_em__6754599E">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="Almacen_De_Reparaciones" Type="Self.Almacen_De_Reparaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="id_empleados" />
+      </Principal>
+      <Dependent Role="Almacen_De_Reparaciones">
+        <PropertyRef Name="id_empleado_a_cargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Almacen_D__id_es__68487DD7">
+    <End Role="estados_de_las_Piezas" Type="Self.estados_de_las_Piezas" Multiplicity="0..1" />
+    <End Role="Almacen_De_Reparaciones" Type="Self.Almacen_De_Reparaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estados_de_las_Piezas">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="Almacen_De_Reparaciones">
+        <PropertyRef Name="id_estado_de_la_pieza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__citas__id_client__6E01572D">
+    <End Role="clientes" Type="Self.clientes" Multiplicity="0..1" />
+    <End Role="citas" Type="Self.citas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clientes">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="citas">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__citas__id_emplea__6EF57B66">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="citas" Type="Self.citas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="id_empleados" />
+      </Principal>
+      <Dependent Role="citas">
+        <PropertyRef Name="id_empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__clientes__id_Usu__5070F446">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="clientes" Type="Self.clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="clientes">
+        <PropertyRef Name="id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleados__id_pu__5812160E">
+    <End Role="puestos" Type="Self.puestos" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="puestos">
+        <PropertyRef Name="id_Puestos" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="id_puesto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleados__id_Us__571DF1D5">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Productos__id_ca__60A75C0F">
+    <End Role="categorias" Type="Self.categorias" Multiplicity="0..1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categorias">
+        <PropertyRef Name="id_categoria" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="id_categria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="FixFastDbModelStoreContainer">
+    <EntitySet Name="Almacen_De_Reparaciones" EntityType="Self.Almacen_De_Reparaciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="categorias" EntityType="Self.categorias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="citas" EntityType="Self.citas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="clientes" EntityType="Self.clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="estados_de_las_Piezas" EntityType="Self.estados_de_las_Piezas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="puestos" EntityType="Self.puestos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Almacen_D__id_cl__66603565" Association="Self.FK__Almacen_D__id_cl__66603565">
+      <End Role="clientes" EntitySet="clientes" />
+      <End Role="Almacen_De_Reparaciones" EntitySet="Almacen_De_Reparaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Almacen_D__id_em__6754599E" Association="Self.FK__Almacen_D__id_em__6754599E">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Almacen_De_Reparaciones" EntitySet="Almacen_De_Reparaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Almacen_D__id_es__68487DD7" Association="Self.FK__Almacen_D__id_es__68487DD7">
+      <End Role="estados_de_las_Piezas" EntitySet="estados_de_las_Piezas" />
+      <End Role="Almacen_De_Reparaciones" EntitySet="Almacen_De_Reparaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__citas__id_client__6E01572D" Association="Self.FK__citas__id_client__6E01572D">
+      <End Role="clientes" EntitySet="clientes" />
+      <End Role="citas" EntitySet="citas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__citas__id_emplea__6EF57B66" Association="Self.FK__citas__id_emplea__6EF57B66">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="citas" EntitySet="citas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__clientes__id_Usu__5070F446" Association="Self.FK__clientes__id_Usu__5070F446">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="clientes" EntitySet="clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleados__id_pu__5812160E" Association="Self.FK__Empleados__id_pu__5812160E">
+      <End Role="puestos" EntitySet="puestos" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleados__id_Us__571DF1D5" Association="Self.FK__Empleados__id_Us__571DF1D5">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Productos__id_ca__60A75C0F" Association="Self.FK__Productos__id_ca__60A75C0F">
+      <End Role="categorias" EntitySet="categorias" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
