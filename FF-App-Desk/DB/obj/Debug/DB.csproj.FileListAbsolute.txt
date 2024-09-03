@@ -10,3 +10,15 @@ C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\DB\obj\Debug\DB.csproj.CoreC
 C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\DB\obj\Debug\DB.csproj.Up2Date
 C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\DB\obj\Debug\DB.dll
 C:\Users\Wilgrey\Documents\GitHub\Fast-Fix-App-Desk\DB\obj\Debug\DB.pdb
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\bin\Debug\DB.dll.config
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\bin\Debug\DB.dll
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\bin\Debug\DB.pdb
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\bin\Debug\EntityFramework.dll
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\bin\Debug\EntityFramework.xml
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\obj\Debug\DB.csproj.AssemblyReference.cache
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\obj\Debug\DB.csproj.CoreCompileInputs.cache
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\obj\Debug\DB.csproj.Up2Date
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\obj\Debug\DB.dll
+C:\Users\Wilgrey\Documents\App-FF\FF-App-Desk\DB\obj\Debug\DB.pdb

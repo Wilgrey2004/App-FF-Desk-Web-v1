@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="FixFastDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="FixFastDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Almacen_De_Reparaciones">
           <Key>
             <PropertyRef Name="id_pieza_a_reparar" />
@@ -43,6 +43,7 @@
           <Property Name="id_cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="id_Usuario" Type="int" />
           <Property Name="rango" Type="char" MaxLength="1" />
+          <Property Name="ACTIVO_INACTIVO" Type="char" MaxLength="1" />
         </EntityType>
         <EntityType Name="Empleados">
           <Key>
@@ -51,6 +52,7 @@
           <Property Name="id_empleados" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="id_Usuario" Type="int" />
           <Property Name="id_puesto" Type="int" />
+          <Property Name="ACTIVO_INACTIVO" Type="char" MaxLength="1" />
         </EntityType>
         <EntityType Name="estados_de_las_Piezas">
           <Key>
@@ -104,6 +106,8 @@
           <Property Name="password" Type="varchar(max)" Nullable="false" />
           <Property Name="email" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="Tipo_User" Type="char" MaxLength="1" />
+          <Property Name="FECHA_DE_CREACION" Type="date" />
+          <Property Name="FECHA_DE_LA_ULTIMA_ACTUALLIZACION" Type="date" />
         </EntityType>
         <Association Name="FK__Almacen_D__id_cl__66603565">
           <End Role="clientes" Type="Self.clientes" Multiplicity="0..1" />
@@ -292,8 +296,7 @@
             <End Role="Productos" EntitySet="Productos" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="FixFastDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -344,6 +347,7 @@
           <NavigationProperty Name="Almacen_De_Reparaciones" Relationship="Self.FK__Almacen_D__id_cl__66603565" FromRole="clientes" ToRole="Almacen_De_Reparaciones" />
           <NavigationProperty Name="citas" Relationship="Self.FK__citas__id_client__6E01572D" FromRole="clientes" ToRole="citas" />
           <NavigationProperty Name="Usuarios" Relationship="Self.FK__clientes__id_Usu__5070F446" FromRole="clientes" ToRole="Usuarios" />
+          <Property Name="ACTIVO_INACTIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="Empleados">
           <Key>
@@ -356,6 +360,7 @@
           <NavigationProperty Name="citas" Relationship="Self.FK__citas__id_emplea__6EF57B66" FromRole="Empleados" ToRole="citas" />
           <NavigationProperty Name="puestos" Relationship="Self.FK__Empleados__id_pu__5812160E" FromRole="Empleados" ToRole="puestos" />
           <NavigationProperty Name="Usuarios" Relationship="Self.FK__Empleados__id_Us__571DF1D5" FromRole="Empleados" ToRole="Usuarios" />
+          <Property Name="ACTIVO_INACTIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="estados_de_las_Piezas">
           <Key>
@@ -414,6 +419,8 @@
           <Property Name="Tipo_User" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
           <NavigationProperty Name="clientes" Relationship="Self.FK__clientes__id_Usu__5070F446" FromRole="Usuarios" ToRole="clientes" />
           <NavigationProperty Name="Empleados" Relationship="Self.FK__Empleados__id_Us__571DF1D5" FromRole="Usuarios" ToRole="Empleados" />
+          <Property Name="FECHA_DE_CREACION" Type="DateTime" Precision="0" />
+          <Property Name="FECHA_DE_LA_ULTIMA_ACTUALLIZACION" Type="DateTime" Precision="0" />
         </EntityType>
         <Association Name="FK__Almacen_D__id_cl__66603565">
           <End Role="clientes" Type="Self.clientes" Multiplicity="0..1" />
@@ -655,6 +662,7 @@
           <EntitySetMapping Name="clientes">
             <EntityTypeMapping TypeName="FixFastDbModel.clientes">
               <MappingFragment StoreEntitySet="clientes">
+                <ScalarProperty Name="ACTIVO_INACTIVO" ColumnName="ACTIVO_INACTIVO" />
                 <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
                 <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
                 <ScalarProperty Name="rango" ColumnName="rango" />
@@ -664,6 +672,7 @@
           <EntitySetMapping Name="Empleados">
             <EntityTypeMapping TypeName="FixFastDbModel.Empleados">
               <MappingFragment StoreEntitySet="Empleados">
+                <ScalarProperty Name="ACTIVO_INACTIVO" ColumnName="ACTIVO_INACTIVO" />
                 <ScalarProperty Name="id_empleados" ColumnName="id_empleados" />
                 <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
                 <ScalarProperty Name="id_puesto" ColumnName="id_puesto" />
@@ -717,6 +726,8 @@
           <EntitySetMapping Name="Usuarios">
             <EntityTypeMapping TypeName="FixFastDbModel.Usuarios">
               <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="FECHA_DE_LA_ULTIMA_ACTUALLIZACION" ColumnName="FECHA_DE_LA_ULTIMA_ACTUALLIZACION" />
+                <ScalarProperty Name="FECHA_DE_CREACION" ColumnName="FECHA_DE_CREACION" />
                 <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="last_name1" ColumnName="last_name1" />

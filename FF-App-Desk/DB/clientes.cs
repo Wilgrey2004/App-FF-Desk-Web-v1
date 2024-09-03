@@ -24,6 +24,7 @@ namespace DB
         public int id_cliente { get; set; }
         public Nullable<int> id_Usuario { get; set; }
         public string rango { get; set; }
+        public string ACTIVO_INACTIVO { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Almacen_De_Reparaciones> Almacen_De_Reparaciones { get; set; }

@@ -1,0 +1,57 @@
+﻿using DB;
+using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace vista
+{
+    public partial class Gestion : MaterialForm
+    {
+        public Usuarios Usuarios { get; set; }
+        public Gestion()
+        {
+            InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+        }
+
+        private List<Usuarios> ObtenerInfoUsuarios()
+        {
+            using (FixFastDbEntities db = new FixFastDbEntities())
+            {
+                List<Usuarios> lista = db.Usuarios.ToList();
+
+                return lista;
+            }
+        }
+
+        private void ActualizarTablas()
+        {
+            MyDataUsers.DataSource = ObtenerInfoUsuarios();
+            MyDataUsers.Columns["clientes"].Visible = false;
+            MyDataUsers.Columns["Empleados"].Visible = false;
+           
+        }
+        private void Gestion_Load(object sender, EventArgs e)
+        {
+            ActualizarTablas();
+        }
+
+        private void MyDataUsers_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            Console.WriteLine(".");
+        }
+    }
+}

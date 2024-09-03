@@ -29,6 +29,8 @@ namespace DB
         public string password { get; set; }
         public string email { get; set; }
         public string Tipo_User { get; set; }
+        public Nullable<System.DateTime> FECHA_DE_CREACION { get; set; }
+        public Nullable<System.DateTime> FECHA_DE_LA_ULTIMA_ACTUALLIZACION { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<clientes> clientes { get; set; }
