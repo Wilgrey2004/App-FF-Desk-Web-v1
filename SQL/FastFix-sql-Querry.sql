@@ -23,36 +23,7 @@ select * from Empleados;
 select * from puestos;
 
 
-create trigger  NewEmployeeOrUpdateUser 
-on Usuarios
-after insert,update 
-	as 
-	begin 
-		DECLARE @UsuarioID INT; 
-		Declare @Tipo char;
 
-		select @UsuarioID = i.id_usuario from inserted i; 
-		select @Tipo = i.Tipo_User from inserted i;
-
-
-		if @Tipo = '1'
-		begin
-			INSERT INTO [dbo].[Empleados]
-			([id_Usuario]
-			,[id_puesto])
-		VALUES(@UsuarioID,6)
-		end
-
-		if @Tipo = '2'
-		begin
-			INSERT INTO [dbo].[clientes]
-           ([id_Usuario]
-           ,[rango])
-     VALUES
-           (@UsuarioID,'1')
-		end
-		
-	end;
 	
 
 
@@ -62,6 +33,9 @@ create table clientes (
 	id_Usuario int references Usuarios(id_usuario),
 	rango CHAR(1) default 'B'
 )
+
+alter table clientes
+	add ACTIVO_INACTIVO char default '1';
 
 create table puestos(
 	id_Puestos INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
@@ -87,6 +61,11 @@ create table Empleados (
 	id_Usuario int references Usuarios(id_usuario),
 	id_puesto int references puestos(id_Puestos)
 )
+
+alter table Empleados
+	add ACTIVO_INACTIVO char default '1';
+
+
 
 create table categorias (
 	id_categoria INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
