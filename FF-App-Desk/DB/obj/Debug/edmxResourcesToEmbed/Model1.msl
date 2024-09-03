@@ -38,6 +38,7 @@
     <EntitySetMapping Name="clientes">
       <EntityTypeMapping TypeName="FixFastDbModel.clientes">
         <MappingFragment StoreEntitySet="clientes">
+          <ScalarProperty Name="ACTIVO_INACTIVO" ColumnName="ACTIVO_INACTIVO" />
           <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
           <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
           <ScalarProperty Name="rango" ColumnName="rango" />
@@ -47,6 +48,7 @@
     <EntitySetMapping Name="Empleados">
       <EntityTypeMapping TypeName="FixFastDbModel.Empleados">
         <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="ACTIVO_INACTIVO" ColumnName="ACTIVO_INACTIVO" />
           <ScalarProperty Name="id_empleados" ColumnName="id_empleados" />
           <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
           <ScalarProperty Name="id_puesto" ColumnName="id_puesto" />
@@ -100,6 +102,8 @@
     <EntitySetMapping Name="Usuarios">
       <EntityTypeMapping TypeName="FixFastDbModel.Usuarios">
         <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="FECHA_DE_LA_ULTIMA_ACTUALLIZACION" ColumnName="FECHA_DE_LA_ULTIMA_ACTUALLIZACION" />
+          <ScalarProperty Name="FECHA_DE_CREACION" ColumnName="FECHA_DE_CREACION" />
           <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="last_name1" ColumnName="last_name1" />

@@ -47,6 +47,7 @@
     <NavigationProperty Name="Almacen_De_Reparaciones" Relationship="Self.FK__Almacen_D__id_cl__66603565" FromRole="clientes" ToRole="Almacen_De_Reparaciones" />
     <NavigationProperty Name="citas" Relationship="Self.FK__citas__id_client__6E01572D" FromRole="clientes" ToRole="citas" />
     <NavigationProperty Name="Usuarios" Relationship="Self.FK__clientes__id_Usu__5070F446" FromRole="clientes" ToRole="Usuarios" />
+    <Property Name="ACTIVO_INACTIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
   </EntityType>
   <EntityType Name="Empleados">
     <Key>
@@ -59,6 +60,7 @@
     <NavigationProperty Name="citas" Relationship="Self.FK__citas__id_emplea__6EF57B66" FromRole="Empleados" ToRole="citas" />
     <NavigationProperty Name="puestos" Relationship="Self.FK__Empleados__id_pu__5812160E" FromRole="Empleados" ToRole="puestos" />
     <NavigationProperty Name="Usuarios" Relationship="Self.FK__Empleados__id_Us__571DF1D5" FromRole="Empleados" ToRole="Usuarios" />
+    <Property Name="ACTIVO_INACTIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
   </EntityType>
   <EntityType Name="estados_de_las_Piezas">
     <Key>
@@ -117,6 +119,8 @@
     <Property Name="Tipo_User" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
     <NavigationProperty Name="clientes" Relationship="Self.FK__clientes__id_Usu__5070F446" FromRole="Usuarios" ToRole="clientes" />
     <NavigationProperty Name="Empleados" Relationship="Self.FK__Empleados__id_Us__571DF1D5" FromRole="Usuarios" ToRole="Empleados" />
+    <Property Name="FECHA_DE_CREACION" Type="DateTime" Precision="0" />
+    <Property Name="FECHA_DE_LA_ULTIMA_ACTUALLIZACION" Type="DateTime" Precision="0" />
   </EntityType>
   <Association Name="FK__Almacen_D__id_cl__66603565">
     <End Role="clientes" Type="Self.clientes" Multiplicity="0..1" />

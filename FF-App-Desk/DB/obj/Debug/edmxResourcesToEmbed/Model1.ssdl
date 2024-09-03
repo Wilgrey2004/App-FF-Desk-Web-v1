@@ -38,6 +38,7 @@
     <Property Name="id_cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="id_Usuario" Type="int" />
     <Property Name="rango" Type="char" MaxLength="1" />
+    <Property Name="ACTIVO_INACTIVO" Type="char" MaxLength="1" />
   </EntityType>
   <EntityType Name="Empleados">
     <Key>
@@ -46,6 +47,7 @@
     <Property Name="id_empleados" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="id_Usuario" Type="int" />
     <Property Name="id_puesto" Type="int" />
+    <Property Name="ACTIVO_INACTIVO" Type="char" MaxLength="1" />
   </EntityType>
   <EntityType Name="estados_de_las_Piezas">
     <Key>
@@ -99,6 +101,8 @@
     <Property Name="password" Type="varchar(max)" Nullable="false" />
     <Property Name="email" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="Tipo_User" Type="char" MaxLength="1" />
+    <Property Name="FECHA_DE_CREACION" Type="date" />
+    <Property Name="FECHA_DE_LA_ULTIMA_ACTUALLIZACION" Type="date" />
   </EntityType>
   <Association Name="FK__Almacen_D__id_cl__66603565">
     <End Role="clientes" Type="Self.clientes" Multiplicity="0..1" />
