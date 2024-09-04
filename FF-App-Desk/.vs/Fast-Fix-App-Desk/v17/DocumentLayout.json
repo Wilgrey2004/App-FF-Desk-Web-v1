@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|solutionrelative:vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|solutionrelative:vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\vista\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|solutionrelative:vista\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B90F8EA4-3991-4916-BC5B-6E67460D7669}|DB\\DB.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\db\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{B90F8EA4-3991-4916-BC5B-6E67460D7669}|DB\\DB.csproj|C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\db\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{B90F8EA4-3991-4916-BC5B-6E67460D7669}|DB\\DB.csproj|solutionrelative:db\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
@@ -37,8 +37,7 @@
               "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\DB\\Model1.edmx [Diagram1]",
               "RelativeToolTip": "DB\\Model1.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-09-03T22:57:57.179Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2024-09-03T22:57:57.179Z"
             },
             {
               "$type": "Document",
@@ -50,8 +49,7 @@
               "RelativeToolTip": "vista\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T22:32:59.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T22:32:59.518Z"
             },
             {
               "$type": "Document",
@@ -61,7 +59,7 @@
               "RelativeDocumentMoniker": "vista\\Gestion.cs",
               "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Gestion.cs",
               "RelativeToolTip": "vista\\Gestion.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAIAwwCwAAAALAAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAwwGIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T22:27:55.74Z",
               "EditorCaption": ""
