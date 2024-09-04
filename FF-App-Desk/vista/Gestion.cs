@@ -53,5 +53,50 @@ namespace vista
         {
             Console.WriteLine(".");
         }
+
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialComboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialCard1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
