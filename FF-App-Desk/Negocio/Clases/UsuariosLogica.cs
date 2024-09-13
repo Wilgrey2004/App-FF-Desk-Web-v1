@@ -11,9 +11,11 @@ namespace Negocio
 {
     public class UsuariosLogica
     {
-        public  (bool,Usuarios) Loging(string email,string pass)
+        public  (int IDUsuario,int IDEmpleado) Loging(string email,string pass)
         {
-            using(FixFastDbEntities db = new FixFastDbEntities())
+            int idEmpleado = 0;
+            int idUser = 0;
+            using (FixFastDbEntities db = new FixFastDbEntities())
             {
                 Usuarios user = db.Usuarios.FirstOrDefault(sf => sf.email == email);
 
@@ -23,24 +25,41 @@ namespace Negocio
                     {
                         if (user.Tipo_User == "1")
                         {
-                            return (true, user);
+                            using(FixFastDbEntities db2 = new FixFastDbEntities())
+                            {
+                                Empleados _idEmpleado = db2.Empleados.FirstOrDefault(fs=> fs.id_Usuario == user.id_usuario);
+                                
+                                
+
+                                if (int.TryParse(_idEmpleado.id_empleados.ToString(), out idEmpleado))
+                                {
+                                    if (_idEmpleado != null)
+                                    {
+                                        idUser = user.id_usuario;
+                                        return (idUser, idEmpleado);
+                                    }
+                                }
+  
+                                MessageBox.Show("Ocurrio un Error");
+                                return (0, 0);
+                            }
+                            
                         }else
                         {
                             MessageBox.Show($"El Usuario ${user.email} No es Un Administrador...");
-                            return (false, user);
-
+                            return (0,0);
                         }
                         //return (true,user);
                     
                     }else {
                     
-                        return (false,user);
+                        return (0,0);
                     
                     }
                 }
 
 
-                return (false,null);
+                return (0,0);
             }
         }
         public  bool CrearUsuario(string name, string lastName1, string lastName2, string sexo, string email, string password)

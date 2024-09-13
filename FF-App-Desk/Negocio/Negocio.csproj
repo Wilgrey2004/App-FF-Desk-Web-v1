@@ -53,8 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\SeccionCliente.cs" />
+    <Compile Include="Clases\SeccionEmpleado.cs" />
+    <Compile Include="Clases\Secciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UsuariosLogica.cs" />
+    <Compile Include="Clases\UsuariosLogica.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DB\DB.csproj">

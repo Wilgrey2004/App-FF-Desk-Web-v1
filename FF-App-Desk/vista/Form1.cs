@@ -64,15 +64,21 @@ namespace vista
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
             UsuariosLogica usl = new UsuariosLogica();
-            bool usExist = usl.Loging(CorreoUserLog.Text, PassUserlog.Text).Item1;
-            if (usExist){
-                Usuarios usInfo = usl.Loging(CorreoUserLog.Text, PassUserlog.Text).Item2;
-
-                MessageBox.Show($"Bienvenido ${usInfo.name}!!!");
-
-
+            int IDUsuario = usl.Loging(CorreoUserLog.Text, PassUserlog.Text).Item1;
+            if (IDUsuario > 0){
+                int IdEmpleado = usl.Loging(CorreoUserLog.Text, PassUserlog.Text).Item2;
+                
+                Gestion gs = new Gestion();
+                gs.ID_Usuario = IDUsuario;
+                gs.ID_empleado = IdEmpleado;
+                MessageBox.Show($"Bienvenido!!!");
+                
+                this.Visible = false;
+                gs.ShowDialog();
+                this.Visible = true;
+            
             }else{
-                MessageBox.Show("El Usuario no existe");
+                MessageBox.Show("A Ocurrido un Error..");
             }
 
         }
