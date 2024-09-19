@@ -221,6 +221,15 @@
       <Name>Negocio</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\plus_10023487.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\delete_10024167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\refresh_10023535.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

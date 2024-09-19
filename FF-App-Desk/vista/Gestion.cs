@@ -1,6 +1,7 @@
 ﻿using DB;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using Negocio.Clases;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,9 +17,20 @@ namespace vista
 {
     public partial class Gestion : MaterialForm
     {
-        public Usuarios Usuarios { get; set; }
+        public int ID_empleado;
+        public int ID_Usuario;
+        private SeccionEmpleado  _SeccionEmpleado;
+        private Usuarios US_seccion;
+        private Empleados Em_Seccion;
         public Gestion()
         {
+            if (ID_empleado > 0 && ID_Usuario > 0) {
+                _SeccionEmpleado.Loging(ID_Usuario,ID_empleado);
+                US_seccion = _SeccionEmpleado.GetUsuario();
+                Em_Seccion = _SeccionEmpleado.GetEmpleados();
+            }
+
+            
             InitializeComponent();
 
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -95,6 +107,16 @@ namespace vista
         }
 
         private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
         {
 
         }

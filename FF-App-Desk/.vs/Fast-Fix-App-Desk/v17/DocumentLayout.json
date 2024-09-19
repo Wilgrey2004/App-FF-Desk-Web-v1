@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|solutionrelative:vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|solutionrelative:vista\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,31 @@
       "RelativeMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|solutionrelative:vista\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B90F8EA4-3991-4916-BC5B-6E67460D7669}|DB\\DB.csproj|C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\db\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{449C6EDC-2DF9-4BFF-9E4D-DB60C4DD4221}|Negocio\\Negocio.csproj|C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\negocio\\clases\\secciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C6EDC-2DF9-4BFF-9E4D-DB60C4DD4221}|Negocio\\Negocio.csproj|solutionrelative:negocio\\clases\\secciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C6EDC-2DF9-4BFF-9E4D-DB60C4DD4221}|Negocio\\Negocio.csproj|C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\negocio\\clases\\seccioncliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C6EDC-2DF9-4BFF-9E4D-DB60C4DD4221}|Negocio\\Negocio.csproj|solutionrelative:negocio\\clases\\seccioncliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C6EDC-2DF9-4BFF-9E4D-DB60C4DD4221}|Negocio\\Negocio.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\negocio\\clases\\seccionempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C6EDC-2DF9-4BFF-9E4D-DB60C4DD4221}|Negocio\\Negocio.csproj|solutionrelative:negocio\\clases\\seccionempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|solutionrelative:vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{449C6EDC-2DF9-4BFF-9E4D-DB60C4DD4221}|Negocio\\Negocio.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\negocio\\clases\\usuarioslogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{449C6EDC-2DF9-4BFF-9E4D-DB60C4DD4221}|Negocio\\Negocio.csproj|solutionrelative:negocio\\clases\\usuarioslogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{53530D36-7B02-4626-889F-1FD5B3460DD7}|vista\\vista.csproj|solutionrelative:vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F8EA4-3991-4916-BC5B-6E67460D7669}|DB\\DB.csproj|c:\\users\\wilgrey\\documents\\app-ff\\ff-app-desk\\db\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{B90F8EA4-3991-4916-BC5B-6E67460D7669}|DB\\DB.csproj|solutionrelative:db\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
@@ -25,19 +49,98 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 382,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gestion.cs",
+              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Gestion.cs",
+              "RelativeDocumentMoniker": "vista\\Gestion.cs",
+              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Gestion.cs",
+              "RelativeToolTip": "vista\\Gestion.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAIA1wHEAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T19:53:30.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuariosLogica.cs",
+              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\Negocio\\Clases\\UsuariosLogica.cs",
+              "RelativeDocumentMoniker": "Negocio\\Clases\\UsuariosLogica.cs",
+              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\Negocio\\Clases\\UsuariosLogica.cs",
+              "RelativeToolTip": "Negocio\\Clases\\UsuariosLogica.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAnwCEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:33:14.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Form1.cs",
+              "RelativeDocumentMoniker": "vista\\Form1.cs",
+              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Form1.cs",
+              "RelativeToolTip": "vista\\Form1.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAwE4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:32:55.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Form1.cs",
+              "RelativeDocumentMoniker": "vista\\Form1.cs",
+              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "vista\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:32:52.471Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SeccionEmpleado.cs",
+              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\Negocio\\Clases\\SeccionEmpleado.cs",
+              "RelativeDocumentMoniker": "Negocio\\Clases\\SeccionEmpleado.cs",
+              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\Negocio\\Clases\\SeccionEmpleado.cs",
+              "RelativeToolTip": "Negocio\\Clases\\SeccionEmpleado.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAuwEgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T13:58:20.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SeccionCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\Negocio\\Clases\\SeccionCliente.cs",
+              "RelativeDocumentMoniker": "Negocio\\Clases\\SeccionCliente.cs",
+              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\Negocio\\Clases\\SeccionCliente.cs",
+              "RelativeToolTip": "Negocio\\Clases\\SeccionCliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T13:42:08.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\DB\\Model1.edmx",
-              "RelativeDocumentMoniker": "DB\\Model1.edmx",
-              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\DB\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "DB\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-09-03T22:57:57.179Z"
+              "Title": "Secciones.cs",
+              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\Negocio\\Clases\\Secciones.cs",
+              "RelativeDocumentMoniker": "Negocio\\Clases\\Secciones.cs",
+              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\Negocio\\Clases\\Secciones.cs",
+              "RelativeToolTip": "Negocio\\Clases\\Secciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T13:38:03.389Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -47,21 +150,9 @@
               "RelativeDocumentMoniker": "vista\\Program.cs",
               "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Program.cs",
               "RelativeToolTip": "vista\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T22:32:59.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Gestion.cs",
-              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Gestion.cs",
-              "RelativeDocumentMoniker": "vista\\Gestion.cs",
-              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\vista\\Gestion.cs",
-              "RelativeToolTip": "vista\\Gestion.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAwwGIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T22:27:55.74Z",
+              "WhenOpened": "2024-09-03T22:32:59.518Z",
               "EditorCaption": ""
             },
             {
@@ -75,6 +166,24 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T22:27:36.63Z",
               "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 18,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\DB\\Model1.edmx",
+              "RelativeDocumentMoniker": "DB\\Model1.edmx",
+              "ToolTip": "C:\\Users\\Wilgrey\\Documents\\App-FF\\FF-App-Desk\\DB\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "DB\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-09-03T22:57:57.179Z",
+              "EditorCaption": " [Diagram1]"
             }
           ]
         }
